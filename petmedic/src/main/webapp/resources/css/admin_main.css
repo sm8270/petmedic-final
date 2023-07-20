@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+.rightCol {
+	text-align: right;
+}
+
+.rightCol>a {
+	text-align: right;
+	color: black;
+}
+
+.adminMainContainer {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.pet_reserve_chart, .hospital_chart {
+	text-align: center;
+	height: 400px;
+	width: 100%;
+	margin: 50px auto;
+}
+
+#pet_reserve_chart_title, #hospital_chart_title {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#pet_reserve_chart_title {
+	margin-left: 27px;
+}
+
+#hospital_chart_title {
+	margin-left: 22px;
+}
+
+.recentIssue {
+	width: 100%;
+}
+
+.recentIssue .recentIssueH2 {
+	border-left: 5px solid #006940ff;
+	padding-left: 20px;
+	margin: 60px auto;
+	margin-left: -15px;
+}
+
+.recentJoinHospital, .recentReserVeHospital {
+	margin-bottom: 50px;
+}
+
+.recentJoinHospitalH2, .recentReserVeHospitalH2 {
+	margin-bottom: 20px;
+}
+
+.recentJoinHospitalH2:before, .recentReserVeHospitalH2:before {
+	display: block;
+	position: absolute;
+	left: 1px;
+	right: 115px;
+	bottom: 23px;
+	z-index: -1;
+	content: '';
+	width: auto;
+	height: 13px;
+	background: #e8f2dd;
+}
+
+.recentHosRow {
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.recentHosRow:hover {
+	background: #f3f5f6;
+}
+
+.recentHosTitle {
+	background-color: #006940ff !important;
+	color: #fff;
+	text-align: center;
+}
+
+/* 차트 부분 css */
+.adminChartContainer { display: flex; }	/* 차트 컨테이너 */
+.pet_reserve_chart, .hospital_chart { width: 40%; } /* 차트 width 조절 */
+.adminChartContainer form { display:inline; } /* 기간조회창 한줄로 */
+.adminChartContainer  span#selectedMonth, .adminChartContainer  span#selectedMonth1 { display: block; } /* 기간조회결과창 아래줄로 */
+
+/* 이슈 부분 css */
+.adminIssueContainer { width: 90%; margin: 0 auto; display: flex;} /* 이슈 컨테이너 */
+.adminIssueContainer .col.recentReserVeHospital { margin-left: 10px; }
